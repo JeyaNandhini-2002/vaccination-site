@@ -1,13 +1,78 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+  position:absolute;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  top:50%;
+  left:80%;
+  transform:translate(-50%,-50%);
+  border:2px solid black;
+  padding:50px;
+}
+.container .text{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.btn{
+  color:black;
+  font-size: 16px;
+  
+}
+form .data label{
+  font-size: 20px;
+}
+form .data input:focus{
+  border-color: red;
+  border-bottom-width:2px;
+  
+}
+.error{
+  color:red;
+
+}
+.good{
+  color:green;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1{
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
 }
+table{
+  width:100%;
+  table-layout: fixed;
+  background-color: azure;
+}
+
+
+
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 18px;
+  color: black;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+
+
+

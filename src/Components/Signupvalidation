@@ -1,0 +1,13 @@
+export default function  signup(values){
+    let error={}
+    if(values.email===""||values.name===""||values.password===""||values.confirmpassword===""){
+        error.email="Enter required fileds"
+    }
+    else if(values.confirmpassword!==values.password){
+        error.email="password does't match"
+    }
+    else{
+        error.email=""
+    }
+    return error;
+}
